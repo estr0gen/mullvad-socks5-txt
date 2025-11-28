@@ -25,6 +25,9 @@ jobs:
           # Process the JSON and extract SOCKS proxies
           jq -r '.[] | select(.socks_name != null) | "socks5://\(.socks_name):\(.socks_port)"' relays.json | sort > mullvad.txt
           
+          # Create no_prefix version
+          jq -r '.[] | select(.socks_name != null) | "\(.socks_name):\(.socks_port)"' relays.json | sort > mullvad_no_prefix.txt
+          
           # Create countries directory
           mkdir -p countries
           
@@ -34,6 +37,7 @@ jobs:
           # Process each country
           while read -r country_code; do
             jq -r --arg code "$country_code" '.[] | select(.socks_name != null and .country_code == $code) | "socks5://\(.socks_name):\(.socks_port)"' relays.json | sort > "countries/${country_code}.txt"
+            jq -r --arg code "$country_code" '.[] | select(.socks_name != null and .country_code == $code) | "\(.socks_name):\(.socks_port)"' relays.json | sort > "countries/${country_code}_no_prefix.txt"
             echo "Created countries/${country_code}.txt with $(wc -l < "countries/${country_code}.txt") proxies"
           done < country_codes.txt
           
@@ -48,6 +52,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add mullvad.txt countries/
-          git commit -m "Update Mullvad SOCKS proxies - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git add mullvad.txt mullvad_no_prefix.txt countries/
+          git commit -m "Update Mullvad SOCKS proxies - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
           git push
