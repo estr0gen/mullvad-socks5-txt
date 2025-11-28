@@ -1,0 +1,2 @@
+gr-ath-wg-socks5-101.relays.mullvad.net:1080
+gr-ath-wg-socks5-102.relays.mullvad.net:1080

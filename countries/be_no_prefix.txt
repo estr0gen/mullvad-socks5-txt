@@ -1,0 +1,3 @@
+be-bru-wg-socks5-101.relays.mullvad.net:1080
+be-bru-wg-socks5-102.relays.mullvad.net:1080
+be-bru-wg-socks5-103.relays.mullvad.net:1080
