@@ -31,20 +31,10 @@ jobs:
           # Show summary
           echo "Found $(wc -l < mullvad.txt) SOCKS proxies"
       
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git diff --quiet mullvad.txt || echo "changed=true" >> $GITHUB_OUTPUT
-      
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add mullvad.txt
           git commit -m "Update Mullvad SOCKS proxies - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
           git push
-      
-      - name: No changes detected
-        if: steps.check_changes.outputs.changed != 'true'
-        run: echo "No changes to mullvad.txt"
