@@ -1,0 +1,50 @@
+name: Update Mullvad SOCKS Proxies
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-mullvad-proxies:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Fetch and process Mullvad relays
+        run: |
+          # Fetch the relay data
+          curl -s https://api.mullvad.net/www/relays/all/ -o relays.json
+          
+          # Process the JSON and extract SOCKS proxies
+          jq -r '.[] | select(.socks_name != null) | "socks5://\(.socks_name):\(.socks_port)"' relays.json | sort > mullvad.txt
+          
+          # Clean up temporary file
+          rm relays.json
+          
+          # Show summary
+          echo "Found $(wc -l < mullvad.txt) SOCKS proxies"
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet mullvad.txt || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add mullvad.txt
+          git commit -m "Update Mullvad SOCKS proxies - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push
+      
+      - name: No changes detected
+        if: steps.check_changes.outputs.changed != 'true'
+        run: echo "No changes to mullvad.txt"
