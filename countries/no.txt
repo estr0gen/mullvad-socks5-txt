@@ -1,9 +1,6 @@
 socks5://no-osl-wg-socks5-001.relays.mullvad.net:1080
 socks5://no-osl-wg-socks5-002.relays.mullvad.net:1080
 socks5://no-osl-wg-socks5-003.relays.mullvad.net:1080
-socks5://no-osl-wg-socks5-004.relays.mullvad.net:1080
-socks5://no-osl-wg-socks5-005.relays.mullvad.net:1080
-socks5://no-osl-wg-socks5-006.relays.mullvad.net:1080
 socks5://no-svg-wg-socks5-001.relays.mullvad.net:1080
 socks5://no-svg-wg-socks5-002.relays.mullvad.net:1080
 socks5://no-svg-wg-socks5-003.relays.mullvad.net:1080
