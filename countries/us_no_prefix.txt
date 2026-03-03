@@ -43,12 +43,6 @@ us-dal-wg-socks5-003.relays.mullvad.net:1080
 us-dal-wg-socks5-401.relays.mullvad.net:1080
 us-dal-wg-socks5-402.relays.mullvad.net:1080
 us-dal-wg-socks5-403.relays.mullvad.net:1080
-us-dal-wg-socks5-502.relays.mullvad.net:1080
-us-dal-wg-socks5-503.relays.mullvad.net:1080
-us-dal-wg-socks5-504.relays.mullvad.net:1080
-us-dal-wg-socks5-505.relays.mullvad.net:1080
-us-dal-wg-socks5-506.relays.mullvad.net:1080
-us-dal-wg-socks5-507.relays.mullvad.net:1080
 us-dal-wg-socks5-601.relays.mullvad.net:1080
 us-dal-wg-socks5-602.relays.mullvad.net:1080
 us-dal-wg-socks5-603.relays.mullvad.net:1080
@@ -78,9 +72,6 @@ us-hou-wg-socks5-001.relays.mullvad.net:1080
 us-hou-wg-socks5-002.relays.mullvad.net:1080
 us-hou-wg-socks5-003.relays.mullvad.net:1080
 us-hou-wg-socks5-004.relays.mullvad.net:1080
-us-lax-wg-socks5-101.relays.mullvad.net:1080
-us-lax-wg-socks5-102.relays.mullvad.net:1080
-us-lax-wg-socks5-103.relays.mullvad.net:1080
 us-lax-wg-socks5-201.relays.mullvad.net:1080
 us-lax-wg-socks5-202.relays.mullvad.net:1080
 us-lax-wg-socks5-203.relays.mullvad.net:1080
@@ -157,10 +148,6 @@ us-phx-wg-socks5-205.relays.mullvad.net:1080
 us-phx-wg-socks5-206.relays.mullvad.net:1080
 us-phx-wg-socks5-207.relays.mullvad.net:1080
 us-phx-wg-socks5-208.relays.mullvad.net:1080
-us-qas-wg-socks5-001.relays.mullvad.net:1080
-us-qas-wg-socks5-002.relays.mullvad.net:1080
-us-qas-wg-socks5-003.relays.mullvad.net:1080
-us-qas-wg-socks5-004.relays.mullvad.net:1080
 us-qas-wg-socks5-101.relays.mullvad.net:1080
 us-qas-wg-socks5-102.relays.mullvad.net:1080
 us-qas-wg-socks5-103.relays.mullvad.net:1080
