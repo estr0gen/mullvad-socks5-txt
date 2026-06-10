@@ -340,12 +340,6 @@ ua-iev-wg-socks5-001.relays.mullvad.net:1080
 ua-iev-wg-socks5-002.relays.mullvad.net:1080
 us-atl-wg-socks5-001.relays.mullvad.net:1080
 us-atl-wg-socks5-002.relays.mullvad.net:1080
-us-atl-wg-socks5-301.relays.mullvad.net:1080
-us-atl-wg-socks5-302.relays.mullvad.net:1080
-us-atl-wg-socks5-303.relays.mullvad.net:1080
-us-atl-wg-socks5-304.relays.mullvad.net:1080
-us-atl-wg-socks5-305.relays.mullvad.net:1080
-us-atl-wg-socks5-306.relays.mullvad.net:1080
 us-atl-wg-socks5-401.relays.mullvad.net:1080
 us-atl-wg-socks5-402.relays.mullvad.net:1080
 us-atl-wg-socks5-403.relays.mullvad.net:1080
@@ -542,10 +536,6 @@ us-sjc-wg-socks5-505.relays.mullvad.net:1080
 us-sjc-wg-socks5-506.relays.mullvad.net:1080
 us-sjc-wg-socks5-507.relays.mullvad.net:1080
 us-sjc-wg-socks5-508.relays.mullvad.net:1080
-us-slc-wg-socks5-201.relays.mullvad.net:1080
-us-slc-wg-socks5-202.relays.mullvad.net:1080
-us-slc-wg-socks5-203.relays.mullvad.net:1080
-us-slc-wg-socks5-204.relays.mullvad.net:1080
 us-slc-wg-socks5-301.relays.mullvad.net:1080
 us-slc-wg-socks5-302.relays.mullvad.net:1080
 us-slc-wg-socks5-303.relays.mullvad.net:1080
