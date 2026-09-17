@@ -161,8 +161,6 @@ socks5://fr-par-wg-socks5-002.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-003.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-004.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-005.relays.mullvad.net:1080
-socks5://fr-par-wg-socks5-006.relays.mullvad.net:1080
-socks5://fr-par-wg-socks5-007.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-101.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-102.relays.mullvad.net:1080
 socks5://fr-par-wg-socks5-103.relays.mullvad.net:1080
@@ -324,6 +322,7 @@ socks5://sg-sin-wg-socks5-002.relays.mullvad.net:1080
 socks5://sg-sin-wg-socks5-003.relays.mullvad.net:1080
 socks5://sg-sin-wg-socks5-101.relays.mullvad.net:1080
 socks5://sg-sin-wg-socks5-102.relays.mullvad.net:1080
+socks5://sg-sin-wg-socks5-103.relays.mullvad.net:1080
 socks5://si-lju-wg-socks5-001.relays.mullvad.net:1080
 socks5://si-lju-wg-socks5-002.relays.mullvad.net:1080
 socks5://sk-bts-wg-socks5-001.relays.mullvad.net:1080
